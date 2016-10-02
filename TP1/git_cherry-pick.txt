@@ -1,0 +1,11 @@
+git cherry-pick [--edit] [-n] [-m parent-number] [-s] [-x] [--ff]
+		  [-S[<keyid>]] <commit>…?
+
+Description:
+	Cette commande permet d'effectuer une modification sur la branche selectionnée par la branche principale.
+L'utilisateur peut alors choisir quelles sont les modifications nécessaires, sans avoir à toutes les integrer.
+Elle permet à l'utilisateur de récupérer une correction de bug de la branche principale, en évitant les nouvelles fonctions implémentées.
+
+
+Option:
+	-e: permet à l'utilisateur d'éditer le message du commit.

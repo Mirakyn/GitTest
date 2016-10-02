@@ -1,0 +1,18 @@
+git clone [--template=<template_directory>]
+	  [-l] [-s] [--no-hardlinks] [-q] [-n] [--bare] [--mirror]
+	  [-o <name>] [-b <name>] [-u <upload-pack>] [--reference <repository>]
+	  [--dissociate] [--separate-git-dir <git dir>]
+	  [--depth <depth>] [--[no-]single-branch]
+	  [--recursive | --recurse-submodules] [--[no-]shallow-submodules]
+	  [--jobs <n>] [--] <repository> [<directory>]
+
+exemple : git clone http://username@host:/path/to/repository
+"http" peut être remplacé par "https" ou "ssh", afin de permettre une connection sécurisé pour le transite des données.
+
+Description:
+	Créé le clone du dépot git fournit dans le dossier courant, avec l'ajout d'un suivis à distance des branches clonées.
+Par la suite, vous pourrez utiliser les commandes <git fetch> et <git pull> sur votre dépôt nouvellement cloné. La commande "fetch" effectuera une mise-à-jour de toutes les branches, 
+tandis que la commande "pull" effectuera une récupération de la branche distante principale vers la la branche courante principale.
+
+Option:
+	-q: Les opérations effectuées ne seront  pas reportées dans le flux d'erreur.

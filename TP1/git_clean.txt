@@ -1,0 +1,10 @@
+git clean [-d] [-f] [-i] [-n] [-q] [-e <pattern>] [-x | -X] [--] <path> ...
+
+Description: 
+	La commande "clean" permet à l'utilisateur de suppprimer tous les fichiers qui ne sont pas référencé dans la version de control.
+Cette commande fonctionne à partir du dossier de localisation actuel. Il vous est donc
+possible de fournir un chemin différent en argument (sous-dossier compris).
+
+Option:
+	-x: Permet aussi de retirer les fichiers ignorés, permettant ainsi la suppression de tout les builds produit.
+	-n: Aucun fichier ne sera supprimé avec cette commande. Il ne s'agit la que d'une visualisation de ce que la commande pourrait effectuer.
